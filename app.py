@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/index")
 def main_func():
-    return "this is a main page!"
+    return "this is a mfdfain page!"
 
 
 if __name__ == "__main__":

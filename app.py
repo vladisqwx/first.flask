@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route("/index")
 def main_func():
-    return "this is a mfdfain page!"
+    return "this is a new page!"
 @app.route("/birthday")
 def main_func():
     return "My Birthday is November 25"

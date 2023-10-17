@@ -18,7 +18,7 @@ def main_func():
     return "My Name Vladislav Osypchuk"
 @app.route("/hobby")
 def main_func():
-    return "My hobby is playing piano"
+    return "My hobby is playing piano!"
 
 
 

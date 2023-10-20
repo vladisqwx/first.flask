@@ -11,13 +11,13 @@ app = Flask(__name__)
 def main_func():
     return "this is a new page!"
 @app.route("/birthday")
-def main_func():
+def main_func1():
     return "My Birthday is November 25"
 @app.route("/name")
-def main_func():
+def main_func2():
     return "My Name Vladislav Osypchuk"
 @app.route("/hobby")
-def main_func():
+def main_func3():
     return "My hobby is playing piano!"
 
 

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+<h1>{{name}}</h1>
+<ul>
+  {% for student in students %}
+  <li>
+    {% if student.score > 91 %} 'good' {% else %} 'not good' {% endif %}
+      <em>{{student.name}}: {{student.score}}//{{max_score}}</em>
+  </li>
+  {% endfor %}
+</ul>
+</body>
+</html>

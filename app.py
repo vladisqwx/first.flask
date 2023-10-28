@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, send_file, request
 from dotenv import load_dotenv
 from enums import NAME, MAX_SCORE, students
 load_dotenv()
@@ -27,6 +27,16 @@ def main_func2():
 @app.route("/hobby")
 def main_func3():
     return "My hobby is playing piano!"
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "GET":
+        user = request.args.get("name")
+        return f"Method GET, user is {user}"
+    else:
+        user = request.form.get("name")
+        return f"Method POST, user is {user}"
+
 
 if __name__ == "__main__":
     app.run(debug=os.getenv("DEBUG"))
